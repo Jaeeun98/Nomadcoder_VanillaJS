@@ -2,6 +2,13 @@ body {
 	text-align: center;
 }
 
+button {
+	cursor : pointer;
+	border:none;
+	background:none;
+	margin-left:10px;
+}
+
 .form, .greetings {
 	display:none;
 }
@@ -28,5 +35,23 @@ body {
 	} to {
 		opacity: 1;
 	}
+}
+ 
+.js_clock {
+	padding-top:170px;
+}
+
+form {
+	padding:5px;
+}
+form input {
+	padding:10px;
+	border:none;
+	border-radius:3px;
+}
+
+.js_toDoList {
+	margin-left:540px;
+	text-align:left;
 }
 
