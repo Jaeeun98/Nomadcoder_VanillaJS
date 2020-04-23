@@ -1,16 +1,34 @@
 /*reset*/
+* {
+	margin:0;
+	padding:0;
+}
 
 body {
 	background:#ece9e8;
 	text-align:center;
+	position:relative;
 }
 
 .modal {
 	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#ece9e8;
+	opacity:0.9;
+}
+
+.modal img {
+	cursor:pointer;
+	top:22%;
+	left:26.2%;
 }
 
 header {
-	padding:10px;
+	padding:30px;
 	margin-bottom:10px;
 }
 
@@ -20,7 +38,7 @@ header h1 {
 }
 
 section {
-	padding-bottom:12px;
+	padding-bottom:50px;
 }
 
 .frame {
@@ -37,6 +55,7 @@ img {
 	position:absolute;
 	top:0;
 	left:0;
+	cursor:pointer;
 }
 
 button {
@@ -49,6 +68,7 @@ button {
 	background:#f2f2f2;
 	top:53%;
 	color:#d9bfa5;
+	cursor:pointer;
 }
 
 .right {
@@ -61,6 +81,7 @@ button {
 
 footer {
 	text-align:right;
-	padding-right:12px;
+	padding-right:20px;
 	color:#5a5248;
+	height:37px;
 }
