@@ -35,6 +35,7 @@ header {
 header h1 {
 	color:#5a5248;
 	font-size:40px;
+	font-family:"Monotype Corsiva", Times, serif; 
 }
 
 section {
@@ -69,6 +70,7 @@ button {
 	top:53%;
 	color:#d9bfa5;
 	cursor:pointer;
+	box-shadow:2px 2px;
 }
 
 .right {
