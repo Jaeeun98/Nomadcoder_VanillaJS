@@ -12,6 +12,13 @@ const modal_4 = document.querySelector(".modal_4");
 const modal_5 = document.querySelector(".modal_5");
 const modal = [modal_1, modal_2, modal_3, modal_4, modal_5];
 
+const rightBtn = document.querySelector(".right");
+const leftBtn = document.querySelector(".left");
+
+console.log(modal.length);
+
+/*modal*/
+
 function handleModal4(){
 	modal[4].style.display = "block";
 }
@@ -56,3 +63,10 @@ modal[2].addEventListener("click", handleNon2);
 modal[1].addEventListener("click", handleNon1);
 modal[0].addEventListener("click", handleNon0);
 
+/*btn slide*/
+
+function rightSlide(){
+
+}
+
+rightBtn.addEventListener("click", rightSlide);
