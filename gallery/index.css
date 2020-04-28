@@ -13,7 +13,7 @@ body {
 
 /*modal*/
 
-.modal {
+.modalImg {
 	display:none;
 	position:absolute;
 	top:0;
@@ -24,10 +24,11 @@ body {
 	opacity:0.9;
 }
 
-.modal img {
+.modalImg img {
 	cursor:pointer;
-	top:22%;
-	left:26.2%;
+	top:19.5%;
+	left:25.3%;
+	border:15px solid  #d9bfa5;
 }
 
 /*header*/
@@ -49,7 +50,7 @@ section {
 	padding-bottom:50px;
 }
 
-.frame {
+.slide {
 	width:600px;
 	height:350px;
 	border:15px solid  #d9bfa5;
@@ -76,20 +77,23 @@ button {
 	border-radius:50%; 
 	border:none;
 	background:#f2f2f2;
-	top:53%;
+	top:50%;
 	color:#d9bfa5;
 	cursor:pointer;
 	box-shadow:2px 2px;
 }
 
-.right {
+.left {
 	left:20%;
 }
 
-.left {
+.right {
 	right:20%;
 }
 
+.slide_2, .slide_3, .slide_4, .slide_5 {
+	display:none;
+}
 
 /*footer*/
 
