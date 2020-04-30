@@ -25,7 +25,7 @@ body {
 }
 
 .modalImg img {
-	cursor:pointer;
+	position:absolute;
 	top:19.5%;
 	left:25.3%;
 	border:15px solid  #d9bfa5;
@@ -55,16 +55,23 @@ section {
 	height:350px;
 	border:15px solid  #d9bfa5;
 	margin:auto;
-	position:relative;
+	overflow:hidden;
+}
+
+ul {
+	width:3000px;
+	height:350px;
+}
+
+ul li {
+	float:left;
 }
 
 img {
 	width:600px;
 	height:350px;
-	position:absolute;
-	top:0;
-	left:0;
 	cursor:pointer;
+
 }
 
 /*btn slide*/
@@ -92,7 +99,7 @@ button {
 }
 
 .slide_2, .slide_3, .slide_4, .slide_5 {
-	display:none;
+	display:block;
 }
 
 /*footer*/

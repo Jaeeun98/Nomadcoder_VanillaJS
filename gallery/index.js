@@ -1,14 +1,15 @@
 const slideImg  = document.getElementsByClassName("slideImg");
 const slide = document.querySelector(".slide");
+const slideLe = slideImg.length;
 
 const modalImg = document.getElementsByClassName("modalImg")
 
 const rightBtn = document.querySelector(".right");
 const leftBtn = document.querySelector(".left");
-const slideIn = 0;
-
-slide.lenght = slideIn;
-console.log(slide);
+const frame = document.querySelector(".translateJS");
+const slideWidth = -600;
+const slideSpped = 0.5;
+let slideIn = 1;
 
 /*modal*/
 
@@ -59,8 +60,18 @@ modalImg[0].addEventListener("click", handleNon0);
 
 /*btn slide*/
 
-function handleslide(){
-
+function handleSlideRight(){	
+	if(slideIn < slideLe){
+		frame.style.transition = slideSpped + "s";
+		frame.style.transform = "translate(" + (slideWidth*slideIn) + "px, 0)";
+		slideIn++;
+	}
+	
 }
 
-rightBtn.addEventListener("click", handleslide)
+function handleSlideLeft(){
+	frame.style.transform = "franslate(600px)";
+}
+
+rightBtn.addEventListener("click", handleSlideRight);
+leftBtn.addEventListener("click", handleSlideLeft);
