@@ -7,9 +7,16 @@ const modalImg = document.getElementsByClassName("modalImg")
 const rightBtn = document.querySelector(".right");
 const leftBtn = document.querySelector(".left");
 const frame = document.querySelector(".translateJS");
-const slideWidth = -600;
+const slideWidth = 600;
 const slideSpped = 0.5;
+let first = frame.firstElementChild;
+let last = frame.lastElementChild;
+let firstSlide = first.cloneNode(true);
+let lastSlide = last.cloneNode(true);
+
 let slideIn = 1;
+
+frame.style.width = slideLe * 600 + "px";
 
 /*modal*/
 
@@ -63,14 +70,21 @@ modalImg[0].addEventListener("click", handleNon0);
 function handleSlideRight(){	
 	if(slideIn < slideLe){
 		frame.style.transition = slideSpped + "s";
-		frame.style.transform = "translate(" + (slideWidth*slideIn) + "px, 0)";
+		frame.style.transform = "translate(-" + (slideWidth*slideIn) + "px, 0)"
 		slideIn++;
+	}  else if(slideIn == slideLe){
+		slideIn = 0;
 	}
 	
 }
 
 function handleSlideLeft(){
-	frame.style.transform = "franslate(600px)";
+	if(slideIn < slideLe) {
+		frame.style.transition = 0;
+		frame.insertBefore(lastSlide, first);
+		frame.style.transition = slideSpped + "s";
+		frame.style.transform = "translate(" + (slideWidth*slideIn) + "px, 0)";
+	}
 }
 
 rightBtn.addEventListener("click", handleSlideRight);
