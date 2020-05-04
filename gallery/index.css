@@ -56,11 +56,15 @@ section {
 	border:15px solid  #d9bfa5;
 	margin:auto;
 	overflow:hidden;
+	position:relative;
 }
 
 ul {
 	width:3000px;
 	height:350px;
+	position:absolute;
+	left:0;
+	transition:left 0.5s;
 }
 
 ul li {
