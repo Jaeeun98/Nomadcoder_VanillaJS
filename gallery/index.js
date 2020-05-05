@@ -8,7 +8,7 @@ const rightBtn = document.querySelector(".right");
 const leftBtn = document.querySelector(".left");
 const frame = document.querySelector(".translateJS");
 const slideWidth = 600;
-let slideIn = 1;
+let slideIn = 0;
 
 
 /*modal*/
@@ -64,14 +64,18 @@ function handleSlideRight(){
 	if(slideIn < slideLe){
 		frame.style.left = "-" + (slideWidth*slideIn) + "px";
 		slideIn++;
-	}  else if(slideIn == slideLe){
-		slideIn = 0;
+		console.log(slideIn);
+		console.log(slideLe);
+	}  else if(slideIn === slideLe){
+		frame.style.left = 0 + "px";
+		slideIn = 0
+		console.log(slideIn);
 	}	
 }
 
 function handleSlideLeft(){
 	if(slideIn < slideLe) {
-		frame.style.left = (slideWidth*slideIn) + "px";
+		frame.style.left = slideWidth + "px";
 	}
 }
 
