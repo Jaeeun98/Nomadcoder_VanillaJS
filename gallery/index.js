@@ -64,18 +64,19 @@ function handleSlideRight(){
 	if(slideIn < slideLe){
 		frame.style.left = "-" + (slideWidth*slideIn) + "px";
 		slideIn++;
-
 	}  else if(slideIn === slideLe){
 		frame.style.left = 0 + "px";
 		slideIn = 1;
-
 	}	
 }
 
 function handleSlideLeft(){
-	if(slideIn < slideLe) {
-		frame.style.left = slideWidth + "px";
-	}
+	if(slideIn === 1) {
+		frame.style.left = "-" + (slideWidth*(slideLe-1)) + "px";
+		slideIn = slideLe;
+	} else if(slideIn <= slideLe)
+		frame.style.left = "-" + (slideWidth*(slideIn-2)) + "px";
+		slideIn--;
 }
 
 rightBtn.addEventListener("click", handleSlideRight);
