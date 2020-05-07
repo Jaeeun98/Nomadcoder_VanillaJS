@@ -73,8 +73,9 @@ function handleSlideRight(){
 function handleSlideLeft(){
 	if(slideIn === 1) {
 		frame.style.left = "-" + (slideWidth*(slideLe-1)) + "px";
-		slideIn = slideLe;
+		slideIn = slideLe+1;
 	} else if(slideIn <= slideLe)
+		console.log(slideIn);
 		frame.style.left = "-" + (slideWidth*(slideIn-2)) + "px";
 		slideIn--;
 }
