@@ -111,7 +111,7 @@ footer {
 .modalImg img {
 	position:absolute;
 	top:25%;
-	left:10%;
+	left:12%;
 	border:15px solid  #d9bfa5;
 	width:480px;
 	height:280px;
@@ -132,10 +132,14 @@ footer {
 	font-size:15px;
 }
 
-.modalImg button {
+.modalBtn {
 	width:20px;
 	border-radius:8px;
 	width:80px;
 	top:85%;
 	font-size:18px;
+}
+
+.bold {
+	font-size:17px;
 }
