@@ -3,9 +3,43 @@
 	padding:0;
 }
 
+.wrap {
+	width:100%;
+	height:100%;
+}
+
+/*main*/
+
 main {
 	background-image:url(img/backgroundImg.png);
+	width:100%;
+	height:100%;
+	color:#fff;
+	text-align: center;
 }
+
+/*header*/
+
+header {
+	width:100%;
+	padding:20px;
+}
+
+.logo {
+	width:230px;
+}
+
+.menu {
+	width:70%;
+	float:right;
+}
+
+.menu > li {
+	width:25%;
+	float:left;
+}
+
+/*section*/
 
 .sub_3 {
 	background-image:url(img/sub_backgroundImg.png);
