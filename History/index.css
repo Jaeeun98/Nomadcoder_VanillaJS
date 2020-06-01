@@ -146,37 +146,50 @@ header {
 }
 
 .sub_1 h1 {
-	top:3%;
+	top:5%;
 	left:35%;
 	letter-spacing:10px;
 }
 
 .sub_1 h2 {
-	top:10%;
+	top:12%;
 	left:43.5%;
 	letter-spacing:3px;
 }
 
 .sub_1 img {
-	width:477px;
-	height:345px;
+	width:427px;
+	height:295px;
 	position:absolute;
 }
 
 .sub_1_img_1 {
-	top:20%;
-	left:10%;
+	top:23%;
+	left:16%;
 }
 
 .sub_1_img_2 {
 	top:45%;
-	left:5%;
+	left:8%;
+	z-index:-7;
 }
 
 .sub_1_img_3 {
-	top:;
-	left:;
+	top:50%;
+	left:43%;
+	z-index:-8;
 }
+
+.sub_1 p {
+	position:absolute;
+	top:33%;
+	left:56%;
+	line-height:2;
+	font-family:궁서체;
+	font-size:18px;
+}
+
+
 
 .sub_3 {
 	background-image:url(img/sub_backgroundImg.png);
