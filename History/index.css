@@ -254,15 +254,24 @@ header {
 	position:relative;
 }
 
+.p {
+	font:16px Malgun Cothic;
+}
+
+.sub_4 h1, .sub_4 p, {
+	position:unset;
+}
+
 
 .background {
 	width:90%;
-	height:90%;
+	height:98%;
 	background:#fff;
 	position:absolute;
 	top:1%;
 	left:5%;
-	border-radius:10px
+	border-radius:10px;
+	padding-top:7%;
 }
 
 
@@ -273,21 +282,24 @@ header {
 }
 
 .sub_4 .box {
-	width:90%;
+	width:85%;
 	height:350px;
-	margin:7%;
+	margin:0% 7% 3% 7%;
 }
 
 
 .sub_4 .text {
-
+	line-height:2.5;
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
 
-.sub_4 .Left {
+.sub_4 .left {
 	float:left;
 }
 
-.sub_4 .Right {
+.sub_4 .right {
 	float:right;
 }
 
