@@ -258,14 +258,18 @@ header {
 	font:16px Malgun Cothic;
 }
 
-.sub_4 h1, .sub_4 p, {
+.sub_4 h1 {
+	line-height:1.5;
+}
+
+.sub_4 h1, .sub_4 p {
 	position:unset;
 }
 
 
 .background {
 	width:90%;
-	height:98%;
+	height:87%;
 	background:#fff;
 	position:absolute;
 	top:1%;
@@ -301,6 +305,61 @@ header {
 
 .sub_4 .right {
 	float:right;
+}
+
+.box_2 h1 {
+	font-size:30px;
+}
+
+.title_2 {
+	width:100%;
+	height:80px;
+	margin-left:5%;
+}
+
+.background_gray {
+	background:#f2f2f2;
+	width:99.8%;
+	height:310px;
+	position:relative;
+	border:1px solid #fff;
+	margin-bottom:7%;
+}
+
+.background_gray img, .square {
+	width:265px;
+	height:205px;
+	position:absolute;
+	top:18%;
+}
+
+.square {
+	background:#fff;
+	top:15%;
+}
+
+.f{
+	left:5%;
+}
+
+.f_img {
+	left:6%;
+}
+
+.t {
+	left:37.5%;
+}
+
+.t_img {
+	left:38.5%;
+}
+
+.th {
+	right:7%;
+}
+
+.th_img {
+	right:6%;
 }
 
 /*800*/
