@@ -362,6 +362,15 @@ header {
 	right:6%;
 }
 
+.bg_2_img_1 {
+	left:5%;
+	top:10%;
+}
+
+.bg_2_img_2 {
+	left:15%;
+}
+
 /*800*/
 
 @media(max-width:800px) {
