@@ -307,14 +307,25 @@ header {
 	float:right;
 }
 
+.p_text {
+	line-height:2.5;
+}
+
+/*box_2*/
+
 .box_2 h1 {
 	font-size:30px;
 }
 
 .title_2 {
-	width:100%;
+	width:95%;
 	height:80px;
-	margin-left:5%;
+	margin:0 0 2% 5%;
+	line-height:2;
+}
+
+.title_2 p {
+	margin-left:40px;
 }
 
 .background_gray {
@@ -362,14 +373,32 @@ header {
 	right:6%;
 }
 
-.bg_2_img_1 {
-	left:5%;
-	top:10%;
+/*box_2_2*/
+
+.tow > div {
+	text-align:center;
+	margin-top:40px;
 }
 
-.bg_2_img_2 {
-	left:15%;
+.tow img {
+	position:unset;
+	margin-top:5px;
+	padding:10px;
 }
+
+.box_2_img {
+	width:60%;
+	height:100%;
+	float:left;
+}
+
+.box_2_text {
+	width:35%;
+	height:100%;
+	float:left;
+	line-height:2.5;
+}
+
 
 /*800*/
 
