@@ -60,12 +60,17 @@ header {
 	margin-top:10px;
 }
 
-.menu > li {
+.li {
 	width:25%;
 	float:left;
 	padding:10px 0;
 	position:relative;
 	cursor:pointer;
+	transition-duration:0.7s;
+}
+
+.li:hover {
+	background:#ccc;
 }
 
 .sub_menu {
@@ -73,11 +78,11 @@ header {
 	position:absolute;
 	top:36px;
 	width:100%;
+	transition-duration:0.7s;
 }
 
 .sub_menu li {
 	cursor:pointer;
-	transition-duration: 0.4s;
 }
 
 .sub_menu li a {
@@ -85,7 +90,6 @@ header {
 	padding:10px 0;
 	color:#fff;
 	cursor:pointer;
-
 }
 
 /*main_box*/
