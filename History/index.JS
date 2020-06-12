@@ -1,5 +1,8 @@
 const li = document.getElementsByClassName("li");
 const subMenu = document.getElementsByClassName("sub_menu");
+let mainBtn = document.querySelector(".main_button");
+//왜 getElementsByClassName으로 했을땐 안되지?
+let btnTop = document.querySelector(".sub_1").offsetTop;
 
 //Menu
 function handleMenu(){
@@ -39,5 +42,10 @@ li[1].addEventListener("mouseout", handleSubMenu1);
 li[2].addEventListener("mouseout", handleSubMenu2);
 li[3].addEventListener("mouseout", handleSubMenu3);
 
+//button_scroll
 
+function handleBtn(){
+	window.scroll({top:btnTop, behavior:'smooth'});
+}
 
+mainBtn.addEventListener("click", handleBtn);
