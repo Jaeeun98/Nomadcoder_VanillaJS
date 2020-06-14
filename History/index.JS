@@ -3,6 +3,10 @@ const subMenu = document.getElementsByClassName("sub_menu");
 let mainBtn = document.querySelector(".main_button");
 //왜 getElementsByClassName으로 했을땐 안되지?
 let btnTop = document.querySelector(".sub_1").offsetTop;
+const hoverBox = document.querySelectorAll(".jsBox");
+const hoverText = document.querySelectorAll(".jsText");
+
+console.log(hoverBox);
 
 //Menu
 function handleMenu(){
@@ -49,3 +53,39 @@ function handleBtn(){
 }
 
 mainBtn.addEventListener("click", handleBtn);
+
+//hover
+
+function handleHover(){
+	hoverBox[0].style.opacity = "0.7";
+	hoverText[0].style.opacity = "1";
+}
+function handleHover1(){
+	hoverBox[1].style.opacity = "0.7";
+	hoverText[1].style.opacity = "1";
+}
+function handleHover2(){
+	hoverBox[2].style.opacity = "0.7";
+	hoverText[2].style.opacity = "1";
+}
+
+function handleBack(){
+	hoverBox[0].style.opacity = "0";
+	hoverText[0].style.opacity = "0";
+}
+function handleBack1(){
+	hoverBox[1].style.opacity = "0";
+	hoverText[1].style.opacity = "0";
+}
+function handleBack2(){
+	hoverBox[2].style.opacity = "0";
+	hoverText[2].style.opacity = "0";
+}
+
+hoverBox[0].addEventListener("mouseover", handleHover);
+hoverBox[1].addEventListener("mouseover", handleHover1);
+hoverBox[2].addEventListener("mouseover", handleHover2);
+
+hoverBox[0].addEventListener("mouseout", handleBack);
+hoverBox[1].addEventListener("mouseout", handleBack1);
+hoverBox[2].addEventListener("mouseout", handleBack2);

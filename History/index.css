@@ -347,12 +347,14 @@ header {
 	margin-bottom:7%;
 }
 
-.background_gray img, .square {
+.background_gray img, .square, .jsBox {
 	width:265px;
 	height:205px;
 	position:absolute;
 	top:18%;
+	cursor:pointer;
 }
+
 
 .square {
 	background:#fff;
@@ -381,6 +383,33 @@ header {
 
 .th_img {
 	right:6%;
+}
+
+.jsBox {
+	background:#000;
+	opacity:0;
+	transition-duration:1s;
+}
+
+.jsText {
+	position:absolute;
+	color:#fff;
+	top:50%;
+	opacity:0;
+	transition-duration:1s;
+	letter-spacing:10px;
+}
+
+.fText {
+	left:15%;	
+}
+
+.tText {
+	left:47%;
+}
+
+.thText {
+	right:13.5%;
 }
 
 /*box_2_2*/
