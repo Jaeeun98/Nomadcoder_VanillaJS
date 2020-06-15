@@ -5,8 +5,17 @@ let mainBtn = document.querySelector(".main_button");
 let btnTop = document.querySelector(".sub_1").offsetTop;
 const hoverBox = document.querySelectorAll(".jsBox");
 const hoverText = document.querySelectorAll(".jsText");
+const onLoad = document.querySelector(".main_box");
+const imgHover = document.querySelectorAll(".jsImg");
 
-console.log(hoverBox);
+console.log(imgHover);
+
+// onload 
+
+window.onload = function(){
+	onLoad.style.opacity = "1";
+}
+
 
 //Menu
 function handleMenu(){
