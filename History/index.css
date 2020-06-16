@@ -247,7 +247,7 @@ header {
 	color:#fff;
 }
 
-.sub_3 > h1 {
+.sub_3 h1 {
 	top:44%;
 	left:38%;
 }
@@ -256,6 +256,10 @@ header {
 	top:52%;
 	left:39.5%;
 	letter-spacing:1px;
+}
+
+.jsScroll {
+	opacity:0;
 }
 
 /*sub_4*/

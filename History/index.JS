@@ -7,15 +7,17 @@ const hoverBox = document.querySelectorAll(".jsBox");
 const hoverText = document.querySelectorAll(".jsText");
 const onLoad = document.querySelector(".main_box");
 const imgHover = document.querySelectorAll(".jsImg");
+const scrollHover = document.querySelector(".jsScroll");
+const scrollTop = document.querySelector(".sub_3").offsetTop;
+const windowTop = window.offsetTop;
 
-console.log(imgHover);
+console.log(windowTop);
 
 // onload 
 
 window.onload = function(){
 	onLoad.style.opacity = "1";
 }
-
 
 //Menu
 function handleMenu(){
@@ -62,6 +64,15 @@ function handleBtn(){
 }
 
 mainBtn.addEventListener("click", handleBtn);
+
+//scrollHover 
+
+
+function handleScrollHover(){
+	scrollHover.style.opacity = "1";
+}
+
+window.addEventListener("", handleScrollHover);
 
 //hover
 
