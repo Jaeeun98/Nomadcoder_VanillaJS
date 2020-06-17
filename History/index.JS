@@ -9,9 +9,9 @@ const onLoad = document.querySelector(".main_box");
 const imgHover = document.querySelectorAll(".jsImg");
 const scrollHover = document.querySelector(".jsScroll");
 const scrollTop = document.querySelector(".sub_3").offsetTop;
-const windowTop = window.offsetTop;
+let windowTop = window.pageYOffset;
 
-console.log(windowTop);
+
 
 // onload 
 
@@ -69,10 +69,12 @@ mainBtn.addEventListener("click", handleBtn);
 
 
 function handleScrollHover(){
-	scrollHover.style.opacity = "1";
-}
+	if(windowTop = scrollTop) {
+		scrollHover.style.opacity = "1";
+	}
+} 
 
-window.addEventListener("", handleScrollHover);
+window.addEventListener("scroll", handleScrollHover);
 
 //hover
 
