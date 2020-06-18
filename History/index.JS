@@ -10,6 +10,9 @@ const imgHover = document.querySelectorAll(".jsImg");
 const scrollHover = document.querySelector(".jsScroll");
 const scrollTop = document.querySelector(".sub_3").offsetTop;
 let windowTop = window.pageYOffset;
+const btnRemocon = document.querySelector(".btnRemocon");
+const remocon = document.querySelector(".remocon");
+const close = document.querySelector(".close");
 
 
 
@@ -111,3 +114,18 @@ hoverBox[2].addEventListener("mouseover", handleHover2);
 hoverBox[0].addEventListener("mouseout", handleBack);
 hoverBox[1].addEventListener("mouseout", handleBack1);
 hoverBox[2].addEventListener("mouseout", handleBack2);
+
+/*remocon*/
+
+function handleRemocon(){
+	btnRemocon.style.opacity = "0";
+	remocon.style.opacity = "1";
+}
+
+function handleClose(){
+	remocon.style.opacity = "0";
+	btnRemocon.style.opacity = "1";
+}
+
+btnRemocon.addEventListener("click", handleRemocon);
+close.addEventListener("click", handleClose);
