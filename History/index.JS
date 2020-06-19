@@ -1,23 +1,59 @@
+//mainHover
+const onLoad = document.querySelector(".main_box");
+//menu
 const li = document.getElementsByClassName("li");
 const subMenu = document.getElementsByClassName("sub_menu");
+//mainBtn, sub_1Top
 let mainBtn = document.querySelector(".main_button");
 //왜 getElementsByClassName으로 했을땐 안되지?
-let btnTop = document.querySelector(".sub_1").offsetTop;
+let subTop = document.querySelector(".sub_1").offsetTop;
+//hoverText
 const hoverBox = document.querySelectorAll(".jsBox");
 const hoverText = document.querySelectorAll(".jsText");
-const onLoad = document.querySelector(".main_box");
+//imgHober
 const imgHover = document.querySelectorAll(".jsImg");
+//scrollHover
 const scrollHover = document.querySelector(".jsScroll");
 const scrollTop = document.querySelector(".sub_3").offsetTop;
 let windowTop = window.pageYOffset;
-const btnRemocon = document.querySelector(".btnRemocon");
-const remocon = document.querySelector(".remocon");
+//remocon
+const btnRemote = document.querySelector(".btnRemote");
+const remote = document.querySelector(".remote");
 const close = document.querySelector(".close");
+const btnTop = document.querySelector(".btnTop");
+const btnBottom = document.querySelector(".btnBottom");
+const btnNum = document.querySelectorAll(".btnNum");
+const mainTop = document.querySelector("main").offsetTop;
+const subBottom = document.querySelector(".sub_5").offsetTop;
+const sub3Top = document.querySelector(".sub_2").offsetTop;
+const sub4Top = document.querySelector(".sub_3").offsetTop;
+console.log(btnNum);
+
+function handleTop(){
+	window.scroll({top:mainTop, behavior:'smooth'});
+}
+function handleBottom(){
+	window.scroll({top:subBottom, behavior:'smooth'});
+}
+
+btnTop.addEventListener("click", handleTop);
+btnBottom.addEventListener("click", handleBottom);
 
 
+function handlebtnNum3(){
+	window.scroll({top:sub3Top, behavior:'smooth'});
+}
+function handlebtnNum4(){
+	window.scroll({top:sub4Top, behavior:'smooth'});
+}
+
+btnNum[0].addEventListener("click", handleTop);
+btnNum[1].addEventListener("click", handleBtn);
+btnNum[2].addEventListener("click", handlebtnNum3);
+btnNum[3].addEventListener("click", handlebtnNum4);
+btnNum[4].addEventListener("click", handleBottom);
 
 // onload 
-
 window.onload = function(){
 	onLoad.style.opacity = "1";
 }
@@ -61,16 +97,13 @@ li[2].addEventListener("mouseout", handleSubMenu2);
 li[3].addEventListener("mouseout", handleSubMenu3);
 
 //button_scroll
-
 function handleBtn(){
-	window.scroll({top:btnTop, behavior:'smooth'});
+	window.scroll({top:subTop, behavior:'smooth'});
 }
 
 mainBtn.addEventListener("click", handleBtn);
 
 //scrollHover 
-
-
 function handleScrollHover(){
 	if(windowTop = scrollTop) {
 		scrollHover.style.opacity = "1";
@@ -117,15 +150,15 @@ hoverBox[2].addEventListener("mouseout", handleBack2);
 
 /*remocon*/
 
-function handleRemocon(){
-	btnRemocon.style.opacity = "0";
-	remocon.style.opacity = "1";
+function handleRemote(){
+	btnRemote.style.opacity = "0";
+	remote.style.opacity = "1";
 }
 
 function handleClose(){
-	remocon.style.opacity = "0";
-	btnRemocon.style.opacity = "1";
+	remote.style.opacity = "0";
+	btnRemote.style.opacity = "1";
 }
 
-btnRemocon.addEventListener("click", handleRemocon);
+btnRemote.addEventListener("click", handleRemote);
 close.addEventListener("click", handleClose);
