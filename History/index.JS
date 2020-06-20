@@ -54,7 +54,7 @@ btnNum[3].addEventListener("click", handlebtnNum4);
 btnNum[4].addEventListener("click", handleBottom);
 
 // onload 
-window.onload = function(){
+function handleOnLoad(){
 	onLoad.style.opacity = "1";
 }
 
@@ -185,4 +185,5 @@ function initialize() {
   }
   window.onload=function() {
    initialize();
+   handleOnLoad();
   }

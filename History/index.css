@@ -568,6 +568,29 @@ footer p {
 	font-size:13px;
 }
 
+/*sub_6*/
+
+.sub_6 {
+	width:100%;
+	height:768px;
+	background:#f2f2f2;
+	position:absolute;
+	top:0;
+	left:0;
+	text-align:center;
+}
+
+.sub_6 h3 {
+	font-size:40px;
+	padding:30px;
+}
+
+.sub_6 img {
+	width:650px;
+	height:450px;
+	margin-top:80px;
+}
+
 /*remocon*/
 
 .remote {
