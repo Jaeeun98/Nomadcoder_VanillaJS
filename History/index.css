@@ -260,7 +260,7 @@ header {
 
 .jsScroll {
 	opacity:0;
-	transition-duration:3s;
+	transition-duration:4s;
 }
 
 /*sub_4*/
@@ -578,17 +578,39 @@ footer p {
 	top:0;
 	left:0;
 	text-align:center;
+	transition-duration:1s;
+	display:none;
 }
 
 .sub_6 h3 {
 	font-size:40px;
-	padding:30px;
+	padding:50px;
 }
 
 .sub_6 img {
 	width:650px;
 	height:450px;
-	margin-top:80px;
+	margin-top:20px;
+}
+
+.sub_6 button {
+	width:25px;
+	height:25px;
+	color:#222;
+	position:absolute;
+	border:none;
+	font-size:30px;
+	top:2%;
+	right:2%;
+	cursor:pointer;
+} 
+
+.sub_6 h2 {
+	position:unset;
+	font-size:20px;
+	text-align:center;
+	margin-top:65px;
+	letter-spacing:10px;
 }
 
 /*remocon*/

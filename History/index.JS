@@ -15,7 +15,7 @@ const imgHover = document.querySelectorAll(".jsImg");
 //scrollHover
 const scrollHover = document.querySelector(".jsScroll");
 const scrollTop = document.querySelector(".sub_3").offsetTop;
-let windowTop = window.pageYOffset;
+let windowTop = window.offsetTop;
 //remocon
 const btnRemote = document.querySelector(".btnRemote");
 const remote = document.querySelector(".remote");
@@ -27,31 +27,8 @@ const mainTop = document.querySelector("main").offsetTop;
 const subBottom = document.querySelector(".sub_5").offsetTop;
 const sub3Top = document.querySelector(".sub_2").offsetTop;
 const sub4Top = document.querySelector(".sub_3").offsetTop;
-console.log(btnNum);
-
-function handleTop(){
-	window.scroll({top:mainTop, behavior:'smooth'});
-}
-function handleBottom(){
-	window.scroll({top:subBottom, behavior:'smooth'});
-}
-
-btnTop.addEventListener("click", handleTop);
-btnBottom.addEventListener("click", handleBottom);
-
-
-function handlebtnNum3(){
-	window.scroll({top:sub3Top, behavior:'smooth'});
-}
-function handlebtnNum4(){
-	window.scroll({top:sub4Top, behavior:'smooth'});
-}
-
-btnNum[0].addEventListener("click", handleTop);
-btnNum[1].addEventListener("click", handleBtn);
-btnNum[2].addEventListener("click", handlebtnNum3);
-btnNum[3].addEventListener("click", handlebtnNum4);
-btnNum[4].addEventListener("click", handleBottom);
+const modalClose = document.querySelector(".modalClose");
+const sub6 = document.querySelector(".sub_6");
 
 // onload 
 function handleOnLoad(){
@@ -148,7 +125,15 @@ hoverBox[0].addEventListener("mouseout", handleBack);
 hoverBox[1].addEventListener("mouseout", handleBack1);
 hoverBox[2].addEventListener("mouseout", handleBack2);
 
-/*remocon*/
+//modal
+
+function handleModalClose(){
+	sub6.style.display = "none";
+}
+
+modalClose.addEventListener("click", handleModalClose);
+	
+//remocon
 
 function handleRemote(){
 	btnRemote.style.opacity = "0";
@@ -162,6 +147,36 @@ function handleClose(){
 
 btnRemote.addEventListener("click", handleRemote);
 close.addEventListener("click", handleClose);
+
+function handleTop(){
+	window.scroll({top:mainTop, behavior:'smooth'});
+}
+function handleBottom(){
+	window.scroll({top:subBottom, behavior:'smooth'});
+}
+
+btnTop.addEventListener("click", handleTop);
+btnBottom.addEventListener("click", handleBottom);
+
+
+function handlebtnNum3(){
+	window.scroll({top:sub3Top, behavior:'smooth'});
+}
+function handlebtnNum4(){
+	window.scroll({top:sub4Top, behavior:'smooth'});
+}
+
+function handleModal(){
+	sub6.style.top = windowTop;
+	sub6.style.display = "block";
+}
+
+btnNum[0].addEventListener("click", handleTop);
+btnNum[1].addEventListener("click", handleBtn);
+btnNum[2].addEventListener("click", handlebtnNum3);
+btnNum[3].addEventListener("click", handlebtnNum4);
+btnNum[4].addEventListener("click", handleBottom);
+btnNum[5].addEventListener("click", handleModal);
 
 //map
 
