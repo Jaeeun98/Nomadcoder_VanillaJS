@@ -15,7 +15,6 @@ const imgHover = document.querySelectorAll(".jsImg");
 //scrollHover
 const scrollHover = document.querySelector(".jsScroll");
 const scrollTop = document.querySelector(".sub_3").offsetTop;
-let windowTop = window.offsetTop;
 //remocon
 const btnRemote = document.querySelector(".btnRemote");
 const remote = document.querySelector(".remote");
@@ -29,6 +28,7 @@ const sub3Top = document.querySelector(".sub_2").offsetTop;
 const sub4Top = document.querySelector(".sub_3").offsetTop;
 const modalClose = document.querySelector(".modalClose");
 const sub6 = document.querySelector(".sub_6");
+
 
 // onload 
 function handleOnLoad(){
@@ -82,6 +82,7 @@ mainBtn.addEventListener("click", handleBtn);
 
 //scrollHover 
 function handleScrollHover(){
+	let windowTop = window.offsetTop;
 	if(windowTop = scrollTop) {
 		scrollHover.style.opacity = "1";
 	}
@@ -167,7 +168,8 @@ function handlebtnNum4(){
 }
 
 function handleModal(){
-	sub6.style.top = windowTop;
+	let windowHeight = window.scrollY;
+	sub6.style.top = windowHeight + "px";
 	sub6.style.display = "block";
 }
 
