@@ -5,7 +5,6 @@ const li = document.getElementsByClassName("li");
 const subMenu = document.getElementsByClassName("sub_menu");
 //mainBtn, sub_1Top
 let mainBtn = document.querySelector(".main_button");
-//왜 getElementsByClassName으로 했을땐 안되지?
 let subTop = document.querySelector(".sub_1").offsetTop;
 //hoverText
 const hoverBox = document.querySelectorAll(".jsBox");
@@ -28,7 +27,6 @@ const sub3Top = document.querySelector(".sub_2").offsetTop;
 const sub4Top = document.querySelector(".sub_3").offsetTop;
 const modalClose = document.querySelector(".modalClose");
 const sub6 = document.querySelector(".sub_6");
-
 
 // onload 
 function handleOnLoad(){
