@@ -760,15 +760,80 @@ header {
 
 /*sub_4*/
 
+.none {
+	display:none;
+}
+
 .sub_4 .box {
 	text-align:center;
+}
+
+.sub_4 h1 {
+	width:100%;
+	height:200px;
+	font-size:30px;
 }
 
 .sub_4 img, .sub_4 .text {
 	width:560px;
 }
 
+.sub_4 .text {
+	margin-left:10px;
+}
+
 .sub_4 .left, .sub_4 .right {
 	float:none;
 
+}
+
+.sub_4 p {
+	padding-top:100px;
+}
+
+.sub_4 .margin {
+	margin-top:50px;
+}
+
+.background_gray {
+	height:170px;
+}
+
+.background_gray img, .square, .jsBox {
+	width:165px;
+	height:105px;
+}
+
+.box_2 h1 {
+	line-height:4;
+}
+
+.fText {
+	left:13.5%;
+}
+
+.tText {
+	left:46%;
+}
+
+.thText {
+	right:12.5%;
+}
+
+.jsText {
+	top:45%;
+}
+
+.sub_4 p {
+	display:none;
+}
+
+.padding {
+	margin-top:90px;
+}
+
+/*sub_5*/
+
+.sub_5_textBox {
+	width:85%;
 }
