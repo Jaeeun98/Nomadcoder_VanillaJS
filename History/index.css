@@ -760,6 +760,10 @@ header {
 
 /*sub_4*/
 
+.background {
+	height:97.5%;
+}
+
 .none {
 	display:none;
 }
@@ -832,8 +836,59 @@ header {
 	margin-top:90px;
 }
 
+.box_2_img {
+	width:40%;
+}
+
+.box_2_img img {
+	width:200px;
+	height:135px;
+	position:absolute;
+	top:3px;
+	left:10px;
+}
+
+.box_2_text {
+	margin:0;
+	width:50%;
+}
+
+.box_2_text p {
+	display:block;
+	padding:0;
+	position:absolute;
+	top:25px;
+}
+
+.margin2 {
+	margin-top:250px;
+}
+
 /*sub_5*/
 
 .sub_5_textBox {
-	width:85%;
+	width:80%;
+	font-size:14px;
 }
+
+.sub_5 .right {
+	right:7%;
+}
+
+.sub_5 img {
+	width:200px;
+	height:130px;
+	bottom:19%;
+	right:10%;
+}
+
+/*footer*/
+
+.footer_box {
+	width:90%;
+}
+
+.me {
+    right: 3%;
+    bottom: 8%;
+ }
