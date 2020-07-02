@@ -226,6 +226,10 @@ header {
 .sub_2 h2, .sub_2 p {
 	position:unset;
 }
+.sub_2 h2 {
+letter-spacing:2px;
+
+}
 
 .sub_2 > .box {
 	margin-top:60px;
@@ -543,7 +547,7 @@ footer {
 }
 
 .footer_box {
-	width:65%;
+	width:95%;
 	display:inline-block;
 	text-align:left;
 }
@@ -556,8 +560,8 @@ footer p {
 }
 
 .orange {
-	bottom:5%;
-	right:30%;
+	bottom:6%;
+	left:32%;
 	color:#fb7813;
 }
 
@@ -892,3 +896,128 @@ header {
     right: 3%;
     bottom: 8%;
  }
+
+ /*800*/
+
+@media(max-width:500px) {
+
+/*main*/
+
+.main_box > h1 {
+	left:30%;
+}
+
+.main_box h2 {
+	left:35.5%;
+}
+
+/*sub_1*/
+
+.sub_1 h1 {
+	left:24%;
+}
+
+.sub_1 h2 {
+	left:14%;
+	letter-spacing:2px;
+}
+
+.sub_1 img {
+	width:100%;
+	left:0;
+}
+
+/*sub_3*/
+
+.sub_3 h1 {
+	left:15%;
+}
+
+.sub_3 p {
+	left:19.5%;
+}
+
+/*sub_4*/
+
+.sub_4 img, .sub_4 .text {
+	width:370px;
+	margin-left:0;
+}
+
+.sub_4 p {
+	font-size:15px;
+}
+
+.background_gray img, .square, .jsBox {
+	width:120px;
+}
+
+.f {
+	left:3%;
+}
+
+.f_img {
+	left:4%;
+}
+
+.fText {
+	left:10%;
+}	
+
+.t {
+	left:34.5%
+}
+
+.t_img {
+	left:35.5%;
+}
+
+.tText {
+    left:41.5%;
+}
+
+.th {
+	right:6%;
+}
+
+.th_img {
+	right:4.5%;
+}
+
+.thText {
+    right:8%;
+}
+
+.box_2_text p {
+	font-size:12px;
+	top:40px;
+}
+
+.box_2_img img {
+	left:0;
+	width:150px;
+}
+
+.box_2 {
+	margin-top:50px;
+}
+
+/*sub_5*/
+
+.map {
+	width:85%;
+}
+
+.box_3 {
+	height:1130px;
+}
+
+.sub_5 img, .me {
+	display:none;
+}
+
+.sub_5 .right {
+	position:unset;
+}
+
+}	
