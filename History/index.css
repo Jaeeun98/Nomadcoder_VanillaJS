@@ -374,6 +374,13 @@ letter-spacing:2px;
 	cursor:pointer;
 }
 
+.jsBox:hover {
+	opacity:0.7;
+}
+
+.jsBox:hover + .jsText {
+	opacity:0.7;
+}
 
 .square {
 	background:#fff;
@@ -409,6 +416,7 @@ letter-spacing:2px;
 	opacity:0;
 	transition-duration:1s;
 }
+
 
 .jsText {
 	position:absolute;
