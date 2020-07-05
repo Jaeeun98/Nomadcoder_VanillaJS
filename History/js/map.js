@@ -1,14 +1,32 @@
-const onLoad = document.querySelector(".main_box");
 
 
-// onload 
-function handleOnLoad(){
-  onLoad.style.opacity = "1";
+
+function initMap() {
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: { lat: 37.579697, lng: 126.977075 }
+  });
+
+  marker = new google.maps.Marker({
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: { lat: 37.579697, lng: 126.977075 }
+  });
+  marker.addListener("click", toggleBounce);
+}
+
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
 }
 
 //map
 
-function initialize() {
+/*function initialize() {
    var myLatlng = new google.maps.LatLng(37.579697, 126.977075); //<- 위도와 경도
    var myOptions = {
     zoom: 15,
@@ -26,7 +44,12 @@ function initialize() {
    });
    infowindow.open(map,marker);
   }
-  window.onload=function() {
-   initialize();
-   handleOnLoad()
-  }
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 37.579697, lng: 126.977075 },
+    zoom: 15
+  });
+}
+
+  */
